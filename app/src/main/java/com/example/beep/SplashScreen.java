@@ -14,6 +14,7 @@ import android.widget.VideoView;
 public class SplashScreen extends AppCompatActivity {
     VideoView vi;
     Handler handler;
+
     @RequiresApi(api = Build.VERSION_CODES.P)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,10 @@ public class SplashScreen extends AppCompatActivity {
         handler = new Handler();
         handler.postDelayed(() ->
                 {
+                        Intent intent = new Intent(SplashScreen.this, Home.class);
+                        startActivity(intent);
+                        finish();
 
-                    Intent intent = new Intent(SplashScreen.this, Home.class);
-                    startActivity(intent);
-                    finish();
                 },3000);
 
     }
