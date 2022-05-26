@@ -27,7 +27,7 @@
             android:name=".Notification_details"
             android:exported="false" />
         <activity
-            android:name=".SingIn"
+            android:name=".SignIn"
             android:exported="false" />
         <activity
             android:name=".Home"
