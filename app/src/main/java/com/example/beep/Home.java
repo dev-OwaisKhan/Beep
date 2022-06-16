@@ -18,11 +18,13 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        toolbar = findViewById(R.id.toolbar);
+       /* toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+*/
+        //getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
 
-    @Override
+   /* @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
@@ -41,5 +43,5 @@ public class Home extends AppCompatActivity {
             Toast.makeText(this, "about button", Toast.LENGTH_SHORT).show();
         }
         return true;
-    }
+    }*/
 }
