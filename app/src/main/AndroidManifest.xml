@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Beep"
         tools:targetApi="31">
         <activity
+            android:name=".About_page"
+            android:exported="false" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -22,18 +31,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".Notification_details"
             android:exported="false" />
         <activity
             android:name=".SignIn"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Home"
-            android:exported="false">
+            android:exported="true" />
 
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

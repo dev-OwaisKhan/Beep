@@ -1,5 +1,6 @@
 package com.example.beep;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -36,11 +37,13 @@ public class Home extends AppCompatActivity {
 
         if (id == R.id.settings)
         {
-            Toast.makeText(this, "settings button", Toast.LENGTH_SHORT).show();
+            Intent set = new Intent(Home.this,Setting.class);
+            startActivity(set);
         }
         else if (id == R.id.about)
         {
-            Toast.makeText(this, "about button", Toast.LENGTH_SHORT).show();
+            Intent abt = new Intent(Home.this,About_page.class);
+            startActivity(abt);
         }
         return true;
     }
