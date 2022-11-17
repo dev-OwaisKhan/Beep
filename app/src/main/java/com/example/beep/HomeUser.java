@@ -4,20 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Home extends AppCompatActivity {
+public class HomeUser extends AppCompatActivity {
 
     Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_user);
 
        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -37,12 +36,12 @@ public class Home extends AppCompatActivity {
 
         if (id == R.id.settings)
         {
-            Intent set = new Intent(Home.this,Setting.class);
+            Intent set = new Intent(HomeUser.this,Setting.class);
             startActivity(set);
         }
         else if (id == R.id.about)
         {
-            Intent abt = new Intent(Home.this,About_page.class);
+            Intent abt = new Intent(HomeUser.this,About_page.class);
             startActivity(abt);
         }
         return true;

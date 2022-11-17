@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class SignIn extends AppCompatActivity {
 
-    private EditText email, password ;
-    private Button enter;
+    EditText email, password ;
+    Button enter,login;
     String check_mail,mail;
 
     @Override
@@ -22,7 +22,9 @@ public class SignIn extends AppCompatActivity {
 
         email = findViewById(R.id.emailID);
         password = findViewById(R.id.passwordText);
-        enter = findViewById(R.id.enterButton);
+        enter = findViewById(R.id.button_sign);
+        login = findViewById(R.id.signin_login);
+
 
        enter.setOnClickListener(new View.OnClickListener() {
            @Override
@@ -39,10 +41,19 @@ public class SignIn extends AppCompatActivity {
                }
                else
                {
-                   Intent intent = new Intent(SignIn.this,Home.class);
+                   Intent intent = new Intent(SignIn.this, HomeUser.class);
                    startActivity(intent);
                    finish();
                }
+           }
+       });
+
+       login.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(SignIn.this,LoginUser.class);
+               startActivity(intent);
+               finish();
            }
        });
     }
