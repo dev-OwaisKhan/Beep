@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.beep" >
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -15,13 +16,14 @@
         tools:targetApi="31" >
         <activity
             android:name=".HomeAdmin"
+
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LoginUser"
+            android:name=".SignUp_User"
             android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,9 +43,6 @@
             android:name=".Setting"
             android:exported="false" />
         <activity
-            android:name=".Test"
-            android:exported="false" />
-        <activity
             android:name=".SplashScreen"
             android:exported="true" >
             <intent-filter>
@@ -56,7 +55,7 @@
             android:name=".Notification_details"
             android:exported="false" />
         <activity
-            android:name=".SignIn"
+            android:name=".LogIn"
             android:exported="true" />
         <activity
             android:name=".HomeUser"

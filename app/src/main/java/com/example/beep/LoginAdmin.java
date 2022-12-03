@@ -19,7 +19,7 @@ public class LoginAdmin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_admin);
 
-        login_admin = findViewById(R.id.button_admin_login);
+        login_admin = findViewById(R.id.admin_login_button);
         email = findViewById(R.id.admin_email);
         password = findViewById(R.id.admin_password);
 

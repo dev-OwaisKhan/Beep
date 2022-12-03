@@ -29,7 +29,7 @@ public class SplashScreen extends AppCompatActivity {
         handler = new Handler();
         handler.postDelayed(() ->
                 {
-                        Intent intent = new Intent(SplashScreen.this, SignIn.class);
+                        Intent intent = new Intent(SplashScreen.this, LogIn.class);
                         startActivity(intent);
                         finish();
 
